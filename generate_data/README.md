@@ -4,9 +4,9 @@ This directory contains scripts and raw data to generate a synthetic SQLite data
 
 The data is separated into three CSV files:
 
-*   `meteo_data.csv`: Synthetic weather and river data.
-*   `maintenance_data.csv`: Synthetic maintenance tickets.
-*   `production_data.csv`: Synthetic electricity production data.
+* `meteo_data.csv`: Synthetic weather and river data.
+* `maintenance_data.csv`: Synthetic maintenance tickets.
+* `production_data.csv`: Synthetic electricity production data.
 
 ## How to use
 
