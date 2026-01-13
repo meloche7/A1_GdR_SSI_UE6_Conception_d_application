@@ -1,0 +1,6 @@
+id_equipement,nom_equipement,statut,description,date_creation
+T1,Turbine 1,Terminé,"Vibration anormale signalée. Roulements changés.",2024-01-02
+V3,Vanne 3,En cours,"La vanne ne se ferme pas complètement. Inspection nécessaire.",2024-01-05
+S2,Capteur de pression 2B,Terminé,"Remplacement du capteur défectueux.",2024-01-06
+T2,Turbine 2,En attente,"Maintenance préventive planifiée.",2024-01-08
+G1,Grille d'admission,En cours,"Nettoyage des débris après la crue.",2024-01-08
