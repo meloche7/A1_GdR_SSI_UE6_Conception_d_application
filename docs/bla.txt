@@ -1,27 +1,30 @@
 Specs:
-L'appli doit permettre à l'utilisateur de saisir des paramètres prévisionnels (débit de la rivière, nombre de turbines disponibles, hauteur de chute, période de production) afin de configurer précisément le scénario de simulation souhaité.
+  thomas:
+      L'appli doit permettre à l'utilisateur de saisir des paramètres prévisionnels (débit de la rivière, nombre de turbines disponibles, hauteur de chute, période de production) afin de configurer précisément le scénario de simulation souhaité.
 
-L'appli doit calculer automatiquement l'estimation de production électrique (en MWh) et de revenu potentiel sur la période définie afin de fournir une base chiffrée pour la décision.
+      L'appli doit calculer automatiquement l'estimation de production électrique (en MWh) et de revenu potentiel sur la période définie afin de fournir une base chiffrée pour la décision.
 
-L'appli doit proposer un mode de comparaison "côte à côte" de deux scénarios différents (ex: production immédiate vs. stockage) afin de visualiser clairement l'impact d'une stratégie de gestion de l'eau par rapport à une autre.
+      L'appli doit proposer un mode de comparaison "côte à côte" de deux scénarios différents (ex: production immédiate vs. stockage) afin de visualiser clairement l'impact d'une stratégie de gestion de l'eau par rapport à une autre.
 
-L'appli doit permettre d'ajuster le rendement des turbines dans le calcul en fonction de leurs données historiques d'usure afin de garantir la fiabilité et la précision des simulations.
+      L'appli doit permettre d'ajuster le rendement des turbines dans le calcul en fonction de leurs données historiques d'usure afin de garantir la fiabilité et la précision des simulations.
 
-L'appli doit afficher des graphiques interactifs (courbes, histogrammes) de la production passée par jour, semaine et mois afin de rendre l'historique de production visuellement accessible et compréhensible.
+  ewan:
+      L'appli doit afficher des graphiques interactifs (courbes, histogrammes) de la production passée par jour, semaine et mois afin de rendre l'historique de production visuellement accessible et compréhensible.
 
-L'appli doit offrir des filtres de sélection par période et par turbine sur ces graphiques afin de permettre à l'utilisateur d'analyser des plages de données spécifiques et d'isoler des événements.
+      L'appli doit offrir des filtres de sélection par période et par turbine sur ces graphiques afin de permettre à l'utilisateur d'analyser des plages de données spécifiques et d'isoler des événements.
 
-L'appli doit permettre à l'utilisateur de définir des seuils d'alerte (intervalle de production "normale") afin de paramétrer le système de surveillance selon ses propres critères d'exploitation.
+      L'appli doit permettre à l'utilisateur de définir des seuils d'alerte (intervalle de production "normale") afin de paramétrer le système de surveillance selon ses propres critères d'exploitation.
 
-L'appli doit modifier la couleur des indicateurs et des points de données sur les graphiques lorsqu'un seuil d'alerte est franchi afin de signaler immédiatement et visuellement toute situation anormale à l'exploitant.
+      L'appli doit modifier la couleur des indicateurs et des points de données sur les graphiques lorsqu'un seuil d'alerte est franchi afin de signaler immédiatement et visuellement toute situation anormale à l'exploitant.
 
-L'appli doit calculer et afficher en temps réel le rendement (kWh produit par m³ d'eau turbiné) afin de mesurer l'efficacité avec laquelle la ressource en eau est convertie en électricité.
+  alexandre:
+      L'appli doit calculer et afficher en temps réel le rendement (kWh produit par m³ d'eau turbiné) afin de mesurer l'efficacité avec laquelle la ressource en eau est convertie en électricité.
 
-L'appli doit calculer et afficher le taux de disponibilité des turbines (pourcentage de temps de fonctionnement) afin de quantifier la fiabilité du parc machine et l'impact de la maintenance.
+      L'appli doit calculer et afficher le taux de disponibilité des turbines (pourcentage de temps de fonctionnement) afin de quantifier la fiabilité du parc machine et l'impact de la maintenance.
 
-L'appli doit calculer et afficher le taux de charge (production moyenne vs puissance installée) afin de visualiser le niveau d'exploitation de la capacité maximale du barrage.
+      L'appli doit calculer et afficher le taux de charge (production moyenne vs puissance installée) afin de visualiser le niveau d'exploitation de la capacité maximale du barrage.
 
-L'appli doit présenter ces indicateurs sous forme de cartes visuelles (jauges, pourcentages) avec leur évolution dans le temps afin de fournir un résumé synthétique et immédiat de la performance globale pour les rapports stratégiques.
+      L'appli doit présenter ces indicateurs sous forme de cartes visuelles (jauges, pourcentages) avec leur évolution dans le temps afin de fournir un résumé synthétique et immédiat de la performance globale pour les rapports stratégiques.
 
 Contrat d'interface :
 POST /auth/login
@@ -36,3 +39,4 @@ GET /kpis/{kpi_id}/history?period=month&from=2026-01-01
 GET /turbines
 PATCH /turbines/{turbine_id}/status
 /home
+
