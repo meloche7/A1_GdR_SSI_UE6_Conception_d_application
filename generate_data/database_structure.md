@@ -54,3 +54,18 @@ Stores electricity production data.
 | `date`          | TEXT    | Date of the production summary (format: YYYY-MM-DD)     |
 | `production_mwh`| REAL    | Total power produced in megawatt-hours (MWh)            |
 | `volume_eau_m3` | INTEGER | Total volume of water used in cubic meters (m³)         |
+
+---
+
+## Table: `intervention`
+
+Stores detailed maintenance intervention records.
+
+| Column              | Type    | Description                                                     |
+| ------------------- | ------- | --------------------------------------------------------------- |
+| `id`                | INTEGER | Primary Key (auto-incrementing)                                 |
+| `id_equipement`     | TEXT    | A unique identifier for the piece of equipment (e.g., "T1")     |
+| `date_intervention` | TEXT    | Date when the intervention was performed (format: YYYY-MM-DD)   |
+| `intervenant`       | TEXT    | Name of the person who performed the intervention               |
+| `probleme`          | TEXT    | Description of the problem encountered                          |
+| `solution`          | TEXT    | Description of the solution applied during the intervention     |
