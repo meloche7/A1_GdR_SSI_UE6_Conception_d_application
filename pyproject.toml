@@ -5,7 +5,7 @@ description = "A project for SI Barrage."
 dependencies = [
     "fastapi",
     "uvicorn[standard]",
-    "SQLAlchemy",
+    "sqlalchemy",
 ]
 requires-python = ">=3.8"
 
