@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard Débit</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+
+    <h1>Dashboard Débit</h1>
+
+    <h2>Dernier débit :</h2>
+    <h3>{{ latest_debit }}</h3>
+
+    <h2>Graphique :</h2>
+    <div id="graph"></div>
+
+    <h2>Historique récent :</h2>
+    <table border="1">
+        <tr>
+            <th>Date</th>
+            <th>Débit</th>
+        </tr>
+        {% for row in history %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <script>
+        var graphs = {{ graphJSON | safe }};
+        if (graphs) {
+            Plotly.newPlot('graph', graphs.data, graphs.layout);
+        }
+    </script>
+
+</body>
+</html>
