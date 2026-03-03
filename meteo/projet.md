@@ -1,12 +1,19 @@
-/si_barrage
+hydro_dashboard/
 │
-├── main.py             # Point d'entrée de l'application FastAPI principale
-├── db.py               # Configuration et connexion à la base de données
-├── requirements.txt    # Dépendances Python du projet
-│
-├── modules/
+├── meteo/
+│   ├── main.py
 │   │
-│   ├── meteo/
-│   │   ├── __init__.py
-│   │   ├── router.py     # Endpoints de l'API pour la météo (ex: /meteo/releves)
-│   │   └── services.py   # Logique métier (ex: calculer les prévisions)
+│   ├── database.py          ← connexion SQLite
+│   │
+│   ├── models/
+│   │   └── forecast.py
+│   │
+│   ├── services/
+│   │   ├── forecast_service.py
+│   │   ├── alerts_service.py
+│   │   └── plotting_service.py
+│   │
+│   └── routers/
+│       └── forecast_router.py
+│
+└── barrage.db
