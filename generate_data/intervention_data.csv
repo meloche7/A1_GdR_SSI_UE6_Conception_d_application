@@ -1,0 +1,16 @@
+id_equipement,date_intervention,intervenant,probleme,solution
+T1,2024-01-03,Jean Dupont,Vibration anormale détectée sur la turbine,Remplacement des roulements et équilibrage de l'arbre
+T1,2024-02-15,Marie Lambert,Contrôle de routine après réparation,Vérification OK - aucune anomalie détectée
+V3,2024-01-06,Pierre Martin,La vanne ne se ferme pas complètement,Ajustement du vérin hydraulique et remplacement des joints
+S2,2024-01-07,Sophie Dubois,Capteur de pression hors calibration,Remplacement du capteur et recalibrage du système
+T2,2024-01-10,Jean Dupont,Maintenance préventive annuelle,Nettoyage complet et lubrification des pièces mobiles
+G1,2024-01-09,Luc Bernard,Accumulation importante de débris après la crue,Nettoyage manuel et évacuation des branches et déchets
+G1,2024-03-12,Luc Bernard,Contrôle trimestriel de la grille,Nettoyage de routine et vérification de l'état structurel
+T3,2024-02-20,Marie Lambert,Surchauffe du palier inférieur,Remplacement du système de refroidissement
+V1,2024-03-05,Pierre Martin,Fuite hydraulique au niveau du vérin,Remplacement des joints toriques et resserrage des raccords
+T2,2024-04-15,Jean Dupont,Bruit inhabituel lors du démarrage,Alignement de l'arbre et vérification des fixations
+S1,2024-04-22,Sophie Dubois,Dérive de la mesure de débit,Recalibrage du capteur et mise à jour du firmware
+V2,2024-05-10,Pierre Martin,Difficulté d'ouverture de la vanne,Graissage du mécanisme et vérification du moteur
+T1,2024-06-01,Jean Dupont,Contrôle semestriel programmé,Inspection complète - État satisfaisant
+G2,2024-06-15,Luc Bernard,Nettoyage préventif avant la saison des pluies,Enlèvement des débris et vérification de la structure
+T3,2024-07-08,Marie Lambert,Légère baisse de rendement observée,Nettoyage des aubes et optimisation des réglages
