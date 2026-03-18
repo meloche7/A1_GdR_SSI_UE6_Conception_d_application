@@ -5,6 +5,10 @@ from sqlalchemy.orm import Session
 
 from .db import get_db
 from .modules.dashboard import router as dashboard_router
+<<<<<<< HEAD
+=======
+from .modules.meteo import router as meteo_router
+>>>>>>> moustapha
 from .modules.maintenance import router as maintenance_router
 from .modules.meteo import router as meteo_router
 from .modules.production import router as production_router
