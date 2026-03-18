@@ -456,10 +456,6 @@ async def dashboard_page():
     <div class="container">
         <div class="header">
             <h1>🌦️ Dashboard Météo</h1>
-            <div class="status-indicator">
-                <div class="status-dot"></div>
-                Système en ligne
-            </div>
         </div>
         
         <!-- Première ligne : 3 colonnes -->
@@ -469,7 +465,7 @@ async def dashboard_page():
                 <div class="metric-title">Débit en temps réel</div>
                 <div id="debit-reel" 
                      hx-get="/dashboard/api/debit-reel" 
-                     hx-trigger="load, every 30s"
+                     hx-trigger="load, every 10s"
                      hx-swap="innerHTML">
                     <div class="loading">
                         <div class="spinner" style="width: 16px; height: 16px; border-width: 2px;"></div>
@@ -485,7 +481,7 @@ async def dashboard_page():
                 </div>
                 <div id="historique-debits" 
                      hx-get="/dashboard/api/historique-debits" 
-                     hx-trigger="load, every 60s"
+                     hx-trigger="load, every 10s"
                      hx-swap="innerHTML">
                     <div class="loading">
                         <div class="spinner" style="width: 16px; height: 16px; border-width: 2px;"></div>
@@ -497,11 +493,11 @@ async def dashboard_page():
             <div class="card">
                 <div class="card-header">
                     <span class="card-icon">📊</span>
-                    <h2 class="card-title">Graphique débits + prévisions</h2>
+                    <h2 class="card-title">Graphique débits et prévisions</h2>
                 </div>
                 <div id="graphique-debits" 
                      hx-get="/dashboard/api/debit-graph" 
-                     hx-trigger="load, every 30s"
+                     hx-trigger="load, every 10s"
                      hx-swap="innerHTML">
                     <div class="loading">
                         <div class="spinner"></div>
@@ -521,7 +517,7 @@ async def dashboard_page():
                 </div>
                 <div id="historique-pluie" 
                      hx-get="/dashboard/api/historique-pluie" 
-                     hx-trigger="load, every 60s"
+                     hx-trigger="load, every 10s"
                      hx-swap="innerHTML">
                     <div class="loading">
                         <div class="spinner" style="width: 16px; height: 16px; border-width: 2px;"></div>
@@ -533,11 +529,11 @@ async def dashboard_page():
             <div class="card">
                 <div class="card-header">
                     <span class="card-icon">🌧️</span>
-                    <h2 class="card-title">Graphique pluie + prévision</h2>
+                    <h2 class="card-title">Graphique pluie et prévision</h2>
                 </div>
                 <div id="graphique-pluie" 
                      hx-get="/dashboard/api/pluie-graph" 
-                     hx-trigger="load, every 30s"
+                     hx-trigger="load, every 10s"
                      hx-swap="innerHTML">
                     <div class="loading">
                         <div class="spinner"></div>
@@ -554,7 +550,7 @@ async def dashboard_page():
                 </div>
                 <div id="estimation-crue" 
                      hx-get="/dashboard/api/estimation-crue" 
-                     hx-trigger="load, every 60s"
+                     hx-trigger="load, every 10s"
                      hx-swap="innerHTML">
                     <div class="loading">
                         <div class="spinner" style="width: 16px; height: 16px; border-width: 2px;"></div>
@@ -570,7 +566,7 @@ async def dashboard_page():
                 </div>
                 <div id="conseils-operation" 
                      hx-get="/dashboard/api/conseils-operation" 
-                     hx-trigger="load, every 60s"
+                     hx-trigger="load, every 10s"
                      hx-swap="innerHTML">
                     <div class="loading">
                         <div class="spinner" style="width: 16px; height: 16px; border-width: 2px;"></div>
