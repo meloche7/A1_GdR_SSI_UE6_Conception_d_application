@@ -1,16 +1,12 @@
 # Point d'entrée de l'application FastAPI principale
-from fastapi import Depends, FastAPI
-from sqlalchemy import text
+from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
+from sqlalchemy import text
 
 from .db import get_db
 from .modules.dashboard import router as dashboard_router
-<<<<<<< HEAD
-=======
 from .modules.meteo import router as meteo_router
->>>>>>> moustapha
 from .modules.maintenance import router as maintenance_router
-from .modules.meteo import router as meteo_router
 from .modules.production import router as production_router
 
 app = FastAPI(
@@ -21,11 +17,8 @@ app = FastAPI(
 
 app.include_router(dashboard_router.router, prefix="/dashboard", tags=["Dashboard"])
 app.include_router(meteo_router.router, prefix="/meteo", tags=["Météo"])
-app.include_router(
-    maintenance_router.router, prefix="/maintenance", tags=["Maintenance"]
-)
+app.include_router(maintenance_router.router, prefix="/maintenance", tags=["Maintenance"])
 app.include_router(production_router.router, prefix="/production", tags=["Production"])
-
 
 @app.get("/", tags=["Root"])
 def read_root():
