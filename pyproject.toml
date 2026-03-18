@@ -3,7 +3,7 @@ name = "si-barrage"
 version = "0.1.0"
 description = "A project for SI Barrage."
 dependencies = [
-    "fastapi",
+    "fastapi[standard]",
     "uvicorn[standard]",
     "SQLAlchemy",
 ]
