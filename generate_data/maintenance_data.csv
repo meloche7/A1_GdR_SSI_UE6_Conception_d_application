@@ -1,6 +1,13 @@
-id_equipement,nom_equipement,statut,description,date_creation
-T1,Turbine 1,Terminé,"Vibration anormale signalée. Roulements changés.",2024-01-02
-V3,Vanne 3,En cours,"La vanne ne se ferme pas complètement. Inspection nécessaire.",2024-01-05
-S2,Capteur de pression 2B,Terminé,"Remplacement du capteur défectueux.",2024-01-06
-T2,Turbine 2,En attente,"Maintenance préventive planifiée.",2024-01-08
-G1,Grille d'admission,En cours,"Nettoyage des débris après la crue.",2024-01-08
+id_equipement,nom_equipement,statut,description,date_creation,ticket_id,date_intervention,intervenant,solution,duree_minutes,cout,pieces_changees
+T1,Turbine 1,Terminé,"Vibration anormale signalée.",2024-01-02,1,2024-01-03,Jean,"Inspection des paliers et resserrage",60,45.0,"Boulonnerie"
+T1,Turbine 1,Terminé,"Surchauffe ponctuelle détectée.",2024-02-10,2,2024-02-11,Amina,"Remplacement des roulements",180,250.0,"Roulements"
+V3,Vanne 3,En cours,"La vanne ne se ferme pas complètement.",2024-01-05,3,2024-01-06,Paul,"Réglage actionneur en cours",45,0.0,""
+V3,Vanne 3,Terminé,"Fuite légère au joint d'étanchéité.",2024-01-20,4,2024-01-21,Paul,"Remplacement du joint",75,30.0,"Joint"
+S2,Capteur de pression 2B,Terminé,"Mesure incohérente sur ligne 2.",2024-01-06,5,2024-01-07,Amina,"Remplacement du capteur",30,80.0,"Capteur pression"
+T2,Turbine 2,En attente,"Maintenance préventive planifiée.",2024-01-08,6,2024-03-01,Lina,"Intervention planifiée - pièces commandées",0,0.0,""
+G1,Grille d'admission,En cours,"Nettoyage des débris après la crue.",2024-01-08,7,2024-01-09,Karim,"Déblaiement partiel et rinçage",120,20.0,""
+P1,Pompe auxiliaire 1,Terminé,"Bruit anormal au démarrage.",2024-02-14,8,2024-02-15,Nora,"Alignement moteur-pompe",90,65.0,"Silent-bloc"
+C4,Conduite forcée section 4,En cours,"Corrosion superficielle observée.",2024-02-22,9,2024-02-23,Idriss,"Application traitement anticorrosion",140,110.0,"Peinture technique"
+B2,Barrage vanne basse 2,En attente,"Contrôle périodique trimestriel.",2024-03-03,10,2024-03-18,Samia,"Inspection visuelle programmée",0,0.0,""
+
+
